@@ -1,12 +1,13 @@
 <?php
   // Requirements
+  require_once("./includes/constants.php");
   require_once("./includes/functions.php");
   require_once('./includes/recaptchalib.php');
 ?>
 
 <?php
   if (isset($_POST['submit_signup_form'])) {
-    $privatekey = "6LcRexUUAAAAAD9tHA3VsFuPp4LD6czaGROFxMF7";
+    $privatekey = SECRET_KEY;
     $resp = recaptcha_check_answer ($privatekey,
                                   $_SERVER["REMOTE_ADDR"],
                                   $_POST["recaptcha_challenge_field"],

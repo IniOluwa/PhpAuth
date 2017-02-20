@@ -63,10 +63,10 @@
                                     <input type="password" class="col-sm-4 form-control" name="confirm_password" value="" placeholder="Confirm Password">
                                   </div>
                                   <div class="form-group">
-                                    <!-- <div class="g-recaptcha" data-sitekey="6LcRexUUAAAAAMBJbrGClzxpp4KYoGveXWLNeMbZ"></div> -->
                                     <?php
+                                      require_once("./includes/constants.php");
                                       require_once("./includes/recaptchalib.php");
-                                      $publickey = "6LcRexUUAAAAAMBJbrGClzxpp4KYoGveXWLNeMbZ";
+                                      $publickey = SITE_KEY;
                                       echo recaptcha_get_html($publickey);
                                     ?>
                                   </div>

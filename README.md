@@ -15,8 +15,7 @@
 #### __Usage__ :metal:
 - Navigate to the repository
 - Run index.php
-- Signup for an account or Log into an account
-    - book/signup.php
+    - Signup for an account or Log into an account
 
 #### __Connecting to the database__ :+1:
 - Create a _constants.php_ file in includes/
@@ -27,8 +26,8 @@
     - define("DB_NAME", "YourAppName_db");
 
 #### __Getting Your CAPTCHA Public and Private Keys__ :+1:
-    - Register YourApp for Google's [reCAPTCHA](https://www.google.com/recaptcha/intro/)
-    - Modify _constants.php_ file in includes/
-    - Create your reCAPTCHA constants in this format
-        - define("SITE_KEY", "your_reCAPTCHA_site_key");
-        - define("SECRET_KEY", "your_reCAPTCHA_secret_key");
+- Register YourApp for Google's [reCAPTCHA](https://www.google.com/recaptcha/intro/)
+- Modify _constants.php_ file in includes/
+- Create your reCAPTCHA constants in this format
+  - define("SITE_KEY", "your_reCAPTCHA_site_key");
+  - define("SECRET_KEY", "your_reCAPTCHA_secret_key");
